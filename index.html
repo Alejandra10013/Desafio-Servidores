@@ -18,10 +18,10 @@
         <!-- CREAR -->
         <div class="col-12 col-sm-3 contaienr p-5">
             <h3>Crear un archivo</h3>
-            <form action="http://localhost:8080/crear" class="mt-4">
+            <form action="http://localhost:8080/crear" class="mt-4" target="_blank">
                 <div class="form-group">
                     Nombre del archivo
-                    <input name="archivo" class="form-control" id="archivo" />
+                    <input name="archivo" class="form-control" id="archivo" required/>
                 </div>
                 <div class="form-group">
                     Contenido
@@ -34,10 +34,10 @@
         <!-- LEER -->
         <div class="col-12 col-sm-3 contaienr p-5">
             <h3>Leer un archivo</h3>
-            <form action="http://localhost:8080/leer" class="mt-4">
+            <form action="http://localhost:8080/leer" class="mt-4" target="_blank">
                 <div class="form-group">
                     Nombre del archivo
-                    <input name="archivo" class="form-control" id="archivo" />
+                    <input name="archivo" class="form-control" id="archivo" required/>
                 </div>
 
                 <button type="submit" class="btn btn-info">Consultar archivo</button>
@@ -46,14 +46,14 @@
         <!-- RENOMBRAR -->
         <div class="col-12 col-sm-3 contaienr p-5">
             <h3>Renombrar un archivo</h3>
-            <form action="http://localhost:8080/renombrar" class="mt-4">
+            <form action="http://localhost:8080/renombrar" class="mt-4" target="_blank">
                 <div class="form-group">
                     Nombre del archivo
-                    <input name="nombre" class="form-control" id="archivo" />
+                    <input name="nombre" class="form-control" id="archivo" required/>
                 </div>
                 <div class="form-group">
                     Nuevo nombre del archivo
-                    <input name="nuevoNombre" class="form-control" id="archivo" />
+                    <input name="nuevoNombre" class="form-control" id="archivo" required/>
                 </div>
 
                 <button type="submit" class="btn btn-warning">Renombrar archivo</button>
@@ -62,16 +62,17 @@
         <!-- ELIMINAR -->
         <div class="col-12 col-sm-3 contaienr p-5">
             <h3>Eliminar un archivo</h3>
-            <form action="http://localhost:8080/eliminar" class="mt-4">
+            <form action="http://localhost:8080/eliminar" class="mt-4" target="_blank">
                 <div class="form-group">
                     Nombre del archivo
-                    <input name="archivo" class="form-control" id="archivo" />
+                    <input name="archivo" class="form-control" id="archivo" required/>
                 </div>
 
                 <button type="submit" class="btn btn-danger">Eliminar archivo</button>
             </form>
         </div>
     </div>
+
 </body>
 
 </html>
